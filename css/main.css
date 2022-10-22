@@ -1,1 +1,247 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #000;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 20px;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.img-block {
+  display: flex;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+}
+
+.badge {
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  top: 15%;
+}
+.badge__theme_sand {
+  background-color: #FED74B;
+  padding: 10px 18px;
+  font-weight: 600;
+}
+.badge__theme_purple {
+  background-color: #7553FF;
+  padding: 13px 25px;
+  color: #FFF;
+}
+.badge__theme_blue {
+  background-color: #099CE8;
+  padding: 13px 25px;
+  color: #FFF;
+}
+.badge_rounded {
+  border: 0 solid transparent;
+  border-bottom-right-radius: 12px;
+  top: 0;
+}
+
+.entity-with-rounded-sides,
+.entity-with-full-rounded-sides {
+  position: relative;
+}
+.entity-with-rounded-sides:before, .entity-with-rounded-sides:after,
+.entity-with-full-rounded-sides:before,
+.entity-with-full-rounded-sides:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  border: 0 solid transparent;
+  z-index: -1;
+}
+
+.entity-with-rounded-sides:before, .entity-with-rounded-sides:after {
+  border-radius: 45%;
+}
+
+.entity-with-full-rounded-sides:before, .entity-with-full-rounded-sides:after {
+  border-radius: 50%;
+}
+
+.card {
+  width: 341px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.card:not(:first-child) {
+  margin-top: 30px;
+}
+
+.card__header-img-block {
+  border: 0 solid transparent;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card__content-block {
+  box-sizing: border-box;
+  border: 1px solid rgba(130, 130, 130, 0.5);
+  border-top: 0;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 16px 19px 19px 17px;
+}
+
+.card__header-content-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.card__time-block {
+  color: #9E9E9E;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+
+.card__title-event-block {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.card__applies-block {
+  list-style-type: none;
+  padding: 0;
+  margin: 25px 0 35px;
+}
+
+.card__applies-row {
+  padding-left: 35px;
+  color: #4B4B4B;
+  background: url("/images/check-mark.svg") 0 2px no-repeat;
+}
+.card__applies-row:not(:first-child) {
+  margin-top: 9px;
+}
+
+.card__available-times-row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 7px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.card__available-times-block {
+  list-style-type: none;
+  display: flex;
+  -moz-column-gap: 13px;
+       column-gap: 13px;
+  padding: 0;
+}
+.card__available-times-block_hidden {
+  display: none;
+}
+
+.available-time-item {
+  padding: 0 10px;
+}
+.available-time-item:before {
+  left: -2px;
+  background-color: #D9E8FF;
+  width: 20px;
+}
+.available-time-item:after {
+  right: -2px;
+  background-color: #D9E8FF;
+  width: 20px;
+}
+
+.available-time-item__text {
+  box-sizing: border-box;
+  height: 100%;
+  display: inline-block;
+  padding: 1px;
+  background-color: #D9E8FF;
+}
+
+.card__details-info-block {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7px;
+}
+
+.card__price-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+.card__price-block_one-price {
+  align-items: center;
+  justify-content: center;
+}
+
+.card__event-price {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 25px;
+}
+
+.card__price-at-the-pier {
+  font-size: 10px;
+}
+
+.card__more-info-btn {
+  background-color: #FED74B;
+  border: none;
+  padding: 0;
+  margin-right: 23px;
+}
+
+.more-info-btn_theme_border-decore:before, .more-info-btn_theme_border-decore:after {
+  background-color: #FED74B;
+  width: 50px;
+  border: 1px solid rgba(130, 130, 130, 0.5);
+  box-sizing: border-box;
+}
+.more-info-btn_theme_border-decore:before {
+  left: -23px;
+}
+.more-info-btn_theme_border-decore:after {
+  right: -23px;
+}
+
+.more-info-btn__text {
+  padding: 0 20px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.more-info-btn__text_theme_border-dcor-for-btn {
+  position: relative;
+}
+.more-info-btn__text_theme_border-dcor-for-btn:before, .more-info-btn__text_theme_border-dcor-for-btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(130, 130, 130, 0.5);
+}
+.more-info-btn__text_theme_border-dcor-for-btn:before {
+  top: 0;
+}
+.more-info-btn__text_theme_border-dcor-for-btn:after {
+  bottom: 0;
+}/*# sourceMappingURL=main.css.map */
