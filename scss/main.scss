@@ -62,6 +62,19 @@ p {
 	display: none !important;
 }
 
+.transition-entity {
+	transition: all .18s;
+
+	&:hover {
+		transition: all .18s;
+	}
+}
+
+.card__available-time-item,
+button {
+	cursor: pointer;
+}
+
 /////////////////
 // card styles //
 /////////////////
@@ -145,18 +158,16 @@ p {
 
 .card__available-time-item {
 	line-height: 24px;
-	background-color: #D9E8FF;
+	background-color: v.$available-time-item;
 	border: 0 solid transparent;
 	border-radius: 12px;
 	padding: 0 14px;
-}
 
-.available-time-item__text {
-	box-sizing: border-box;
-	height: 100%;
-	display: inline-block;
-	padding: 1px;
-	background-color: v.$available-time-item;
+	&:hover {
+		background-color: #6BA6FF;
+		color: #FFF;
+		box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .3);
+	}
 }
 
 .card__details-info-block {
@@ -189,6 +200,10 @@ p {
 .card__more-info-btn {
 	background-color: v.$accent;
 	line-height: 44px;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .more_info-btn_theme_wide-1 {
@@ -201,8 +216,13 @@ p {
 
 // чтобы можно было применить без проблем
 // скругление через border
+// ---
+// даже если это делать как стиль самой кнопки
+// всё равно на декстопе к какому-то селектору
+// нужно обратиться для отмены правила.
+// а так ещё и под мобилу предусмотрена вариация
 .more-info-btn_theme_border-decore {
-	box-shadow: inset 0 0 0 1px rgb(130 130 130 / 50%);
+	box-shadow: inset 0 0 0 1px rgb(130, 130, 130, .5);
 }
 
 .more-info-btn_theme_border-rounded-type-1 {
