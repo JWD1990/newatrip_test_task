@@ -135,16 +135,25 @@ button {
        column-gap: 10px;
 }
 
+.card__more-available-times-block,
 .card__available-times-block {
   list-style-type: none;
   display: flex;
-  gap: 4px;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  row-gap: 5px;
   padding: 0;
   flex-wrap: wrap;
 }
 
+.card__available-times-block {
+  height: 29px;
+  overflow: hidden;
+}
+
 .card__available-time-item {
   line-height: 24px;
+  height: 24px;
   background-color: #D9E8FF;
   border: 0 solid transparent;
   border-radius: 12px;

@@ -8,6 +8,7 @@
 	.badge {
     top: 13%;
 		font-size: 16px;
+		font-weight: 600;
 	}
 
 	/////////////////
@@ -63,10 +64,14 @@
 		}
 	}
 
+	.card__available-times-block {
+		height: 33px;
+		width: 310px;
+	}
+
 	.card__available-time-item {
 		font-size: 15.5px;
     padding: 3px 17px 1px;
-    font-weight: 600;
 	}
 
 	.card__details-info-block {
