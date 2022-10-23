@@ -49,28 +49,8 @@ p {
   top: 0;
 }
 
-.entity-with-rounded-sides,
-.entity-with-full-rounded-sides {
-  position: relative;
-}
-.entity-with-rounded-sides:before, .entity-with-rounded-sides:after,
-.entity-with-full-rounded-sides:before,
-.entity-with-full-rounded-sides:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 100%;
-  border: 0 solid transparent;
-  z-index: -1;
-}
-
-.entity-with-rounded-sides:before, .entity-with-rounded-sides:after {
-  border-radius: 45%;
-}
-
-.entity-with-full-rounded-sides:before, .entity-with-full-rounded-sides:after {
-  border-radius: 50%;
+.hidded-entity {
+  display: none !important;
 }
 
 .card {
@@ -145,26 +125,17 @@ p {
 .card__available-times-block {
   list-style-type: none;
   display: flex;
-  -moz-column-gap: 13px;
-       column-gap: 13px;
+  gap: 4px;
   padding: 0;
-}
-.card__available-times-block_hidden {
-  display: none;
+  flex-wrap: wrap;
 }
 
-.available-time-item {
-  padding: 0 10px;
-}
-.available-time-item:before {
-  left: -2px;
+.card__available-time-item {
+  line-height: 24px;
   background-color: #D9E8FF;
-  width: 20px;
-}
-.available-time-item:after {
-  right: -2px;
-  background-color: #D9E8FF;
-  width: 20px;
+  border: 0 solid transparent;
+  border-radius: 12px;
+  padding: 0 14px;
 }
 
 .available-time-item__text {
@@ -203,45 +174,27 @@ p {
 
 .card__more-info-btn {
   background-color: #FED74B;
-  border: none;
-  padding: 0;
-  margin-right: 23px;
+  line-height: 44px;
 }
 
-.more-info-btn_theme_border-decore:before, .more-info-btn_theme_border-decore:after {
-  background-color: #FED74B;
-  width: 50px;
-  border: 1px solid rgba(130, 130, 130, 0.5);
-  box-sizing: border-box;
-}
-.more-info-btn_theme_border-decore:before {
-  left: -23px;
-}
-.more-info-btn_theme_border-decore:after {
-  right: -23px;
+.more_info-btn_theme_wide-1 {
+  padding: 0 48px;
 }
 
-.more-info-btn__text {
-  padding: 0 20px;
-  min-height: 44px;
-  display: flex;
-  align-items: center;
+.more_info-btn_theme_wide-2 {
+  padding: 0 62px;
 }
 
-.more-info-btn__text_theme_border-dcor-for-btn {
-  position: relative;
+.more-info-btn_theme_border-decore {
+  box-shadow: inset 0 0 0 1px rgba(130, 130, 130, 0.5);
 }
-.more-info-btn__text_theme_border-dcor-for-btn:before, .more-info-btn__text_theme_border-dcor-for-btn:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: rgba(130, 130, 130, 0.5);
+
+.more-info-btn_theme_border-rounded-type-1 {
+  border: 0 solid transparent;
+  border-radius: 21px;
 }
-.more-info-btn__text_theme_border-dcor-for-btn:before {
-  top: 0;
-}
-.more-info-btn__text_theme_border-dcor-for-btn:after {
-  bottom: 0;
+
+.more-info-btn_theme_border-rounded-type-2 {
+  border: 0 solid transparent;
+  border-radius: 12px;
 }/*# sourceMappingURL=main.css.map */
