@@ -1,0 +1,75 @@
+@media screen and (min-width: 1200px) {
+  .badge {
+    top: 13%;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .card {
+    width: auto;
+    min-width: 1070px;
+    max-width: 1106px;
+    display: flex;
+  }
+  .card:not(:first-child) {
+    margin-top: 65px;
+  }
+  .card__header-block {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+    min-width: 473px;
+  }
+  .card__content-block {
+    padding: 18px 32px 22px 22px;
+    border-top-width: 1px;
+    border-left: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 12px;
+  }
+  .card__header-content-block {
+    flex-direction: column-reverse;
+    row-gap: 11px;
+  }
+  .card__title-event-block {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: normal;
+  }
+  .card__applies-block {
+    margin: 13px 0 24px;
+  }
+  .card__applies-row {
+    font-size: 19px;
+    padding-left: 31px;
+  }
+  .card__applies-row:not(:first-child) {
+    margin-top: 16px;
+  }
+  .card__available-times-block {
+    height: 33px;
+    width: 310px;
+  }
+  .card__available-time-item {
+    font-size: 15.5px;
+    padding: 3px 17px 1px;
+  }
+  .card__details-info-block {
+    margin-left: 0;
+    justify-content: left;
+    gap: 15px;
+  }
+  .card__event-price {
+    font-size: 36px;
+    line-height: 33px;
+  }
+  .card__price-at-the-pier {
+    font-size: 14px;
+  }
+  .card__more-info-btn {
+    line-height: 52px;
+    font-size: 18px;
+    padding: 0 47px;
+  }
+  .more-info-btn_theme_border-decore {
+    box-shadow: none;
+  }
+}/*# sourceMappingURL=1200.css.map */

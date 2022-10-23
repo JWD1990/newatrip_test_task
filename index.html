@@ -1,13 +1,142 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newatrip Test Task</title>
-    <link rel="stylesheet" href="css/main.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Newatrip Test Task</title>
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    
+	<div class="card">
+		<!-- хедер карточки -->
+		<div class="card__header-block">
+			<picture>
+				<source srcset="/images/AdobeStock_168443825.jpg" media="(min-width: 1200px)">
+				<img srcset="/images/sankt-peterburg-piter-st-3495.jpg" alt="Card images">
+			</picture>
+			<div class="badge badge__theme_sand">Новинка</div>
+		</div>
+		<!-- Контент карточки -->
+		<div class="card__content-block">
+			<!-- верхняя часть -->
+			<div class="card__header-content-block">
+				<div class="card__time-block">
+					<img src="/images/clock-icon.svg" alt="Clock icon">
+					<span class="card__time-value"></span> 2 часа
+				</div>
+				<div class="card__title-event-block">
+					АКЦИЯ - Обзорная экскурсия по рекам и каналам  с остановками Hop on Hop Off 2019
+				</div>
+			</div>
+			<!-- верхняя часть - конец -->
+			<ul class="card__applies-block">
+				<li class="card__applies-row">Билет на целый день</li>
+				<li class="card__applies-row">Билет на целый день</li>
+				<li class="card__applies-row">6 остановок у главных достопримечательностей</li>
+				<li class="card__applies-row card__available-times-row">
+					<span class="applies-row__text">Ближайший рейс сегодня</span>
+					<ul class="card__available-times-block">
+						<li class="card__available-time-item transition-entity">12:00</li>
+						<li class="card__available-time-item transition-entity">13:00</li>
+						<li class="card__available-time-item transition-entity">14:00</li>
+						<li class="card__available-time-item transition-entity">15:00</li>
+						<li class="card__available-time-item transition-entity">16:00</li>
+					</ul>
+					<ul class="card__more-available-times-block hidded-entity"></ul>
+				</li>
+			</ul>
+			<!-- блок цены и кнопки доп инфы -->
+			<div class="card__details-info-block">
+				<div class="card__price-block">
+					<p class="card__event-price">900 &#8381;</p>
+					<div class="card__price-at-the-pier">1200 &#8381; на причале</div>
+				</div>
+				<div class="card__more-info-btn-block">
+					<button class="
+						card__more-info-btn more-info-btn_theme_border-decore
+						more-info-btn_theme_border-rounded-type-1 more_info-btn_theme_wide-1
+					">
+						Подробнее
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- Контент карточки - конец -->
+	</div>
+	<!-- Карточка - конец -->
+	<div class="card">
+		<!-- хедер карточки -->
+		<div class="card__header-block">
+			<div class="card__header-img-block img-block">
+				<picture>
+					<source srcset="/images/AdobeStock_168443825.jpg" media="(min-width: 1200px)">
+					<img srcset="/images/sankt-peterburg-piter-st-3495.jpg" alt="Card images">
+				</picture>
+				<div class="badge badge__theme_purple badge_rounded">Новинка</div>
+			</div>
+		</div>
+		<!-- Контент карточки -->
+		<div class="card__content-block">
+			<!-- верхняя часть -->
+			<div class="card__header-content-block">
+				<div class="card__time-block">
+					<img src="/images/clock-icon.svg" alt="Clock icon">
+					<span class="card__time-value"></span> 2 часа
+				</div>
+				<div class="card__title-event-block">
+					АКЦИЯ - Обзорная экскурсия по рекам и каналам  с остановками Hop on Hop Off 2019
+				</div>
+			</div>
+			<!-- верхняя часть - конец -->
+			<ul class="card__applies-block">
+				<li class="card__applies-row">Билет на целый день</li>
+				<li class="card__applies-row">Билет на целый день</li>
+				<li class="card__applies-row">6 остановок у главных достопримечательностей</li>
+				<li class="card__applies-row card__available-times-row">
+					<span class="applies-row__text">Ближайший рейс сегодня</span>
+					<ul class="card__available-times-block hidded-entityy">
+						<li class="card__available-time-item transition-entity">12:00</li>
+						<li class="card__available-time-item transition-entity">13:00</li>
+						<li class="card__available-time-item transition-entity">14:00</li>
+					</ul>
+					<ul class="card__more-available-times-block hidded-entity"></ul>
+				</li>
+			</ul>
+			<!-- блок цены и кнопки доп инфы -->
+			<div class="card__details-info-block">
+				<div class="card__price-block card__price-block_one-price">
+					<p class="card__event-price">900 &#8381;</p>
+					<div class="card__price-at-the-pier"></div>
+				</div>
+				<div class="card__more-info-btn-block">
+					<button class="
+						card__more-info-btn more-info-btn_theme_border-decore
+						more-info-btn_theme_border-rounded-type-2 more_info-btn_theme_wide-2
+					">
+						Подробнее
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- Контент карточки - конец -->
+	</div>
+	<!-- Карточка - конец -->
+	<script>
+		// https://adapt.960.gs/
+		ADAPT_CONFIG = {
+			path: '/css/',
+			dynamic: true,
+			range: [
+				'1200px to 2540px = 1200.css',
+			],
+		};
+	</script>
+	<script src="js/adapt.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
