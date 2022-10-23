@@ -13,13 +13,14 @@ p {
   margin: 0;
 }
 
-.img-block {
-  display: flex;
-  width: 100%;
+.img,
+picture {
+  max-width: 100%;
+  height: auto;
 }
 
-.image {
-  width: 100%;
+picture {
+  display: flex;
 }
 
 .badge {
@@ -46,7 +47,7 @@ p {
 .badge_rounded {
   border: 0 solid transparent;
   border-bottom-right-radius: 12px;
-  top: 0;
+  top: 0 !important;
 }
 
 .hidded-entity {
@@ -67,25 +68,25 @@ button {
 
 .card {
   width: 341px;
-  overflow: hidden;
   margin: 0 auto;
 }
 .card:not(:first-child) {
   margin-top: 30px;
 }
 
-.card__header-img-block {
+.card__header-block {
   border: 0 solid transparent;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
   overflow: hidden;
   position: relative;
+  display: flex;
 }
 
 .card__content-block {
   box-sizing: border-box;
   border: 1px solid rgba(130, 130, 130, 0.5);
-  border-top: 0;
+  border-top-width: 0;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
   padding: 16px 19px 19px 17px;

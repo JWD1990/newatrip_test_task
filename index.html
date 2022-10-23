@@ -15,10 +15,11 @@
 	<div class="card">
 		<!-- хедер карточки -->
 		<div class="card__header-block">
-			<div class="card__header-img-block img-block">
-				<img src="/images/sankt-peterburg-piter-st-3495.jpg" alt="Card images" class="card__header_img image">
-				<div class="badge badge__theme_sand">Новинка</div>
-			</div>
+			<picture>
+				<source srcset="/images/AdobeStock_168443825.jpg" media="(min-width: 1200px)">
+				<img srcset="/images/sankt-peterburg-piter-st-3495.jpg" alt="Card images">
+			</picture>
+			<div class="badge badge__theme_sand">Новинка</div>
 		</div>
 		<!-- Контент карточки -->
 		<div class="card__content-block">
@@ -35,9 +36,10 @@
 			<!-- верхняя часть - конец -->
 			<ul class="card__applies-block">
 				<li class="card__applies-row">Билет на целый день</li>
+				<li class="card__applies-row">Билет на целый день</li>
 				<li class="card__applies-row">6 остановок у главных достопримечательностей</li>
 				<li class="card__applies-row card__available-times-row">
-					<span class="applies-row__text">Билет на целый день</span>
+					<span class="applies-row__text">Ближайший рейс сегодня</span>
 					<ul class="card__available-times-block hidded-entityy">
 						<li class="card__available-time-item transition-entity">12:00</li>
 						<li class="card__available-time-item transition-entity">12:00</li>
@@ -51,7 +53,7 @@
 			<div class="card__details-info-block">
 				<div class="card__price-block">
 					<p class="card__event-price">900 &#8381;</p>
-					<div class="card__price-at-the-pier">1200 р на причале</div>
+					<div class="card__price-at-the-pier">1200 &#8381; на причале</div>
 				</div>
 				<div class="card__more-info-btn-block">
 					<button class="
@@ -70,7 +72,10 @@
 		<!-- хедер карточки -->
 		<div class="card__header-block">
 			<div class="card__header-img-block img-block">
-				<img src="/images/sankt-peterburg-piter-st-3495.jpg" alt="Card images" class="card__header_img image">
+				<picture>
+					<source srcset="/images/AdobeStock_168443825.jpg" media="(min-width: 1200px)">
+					<img srcset="/images/sankt-peterburg-piter-st-3495.jpg" alt="Card images">
+				</picture>
 				<div class="badge badge__theme_purple badge_rounded">Новинка</div>
 			</div>
 		</div>
@@ -89,9 +94,10 @@
 			<!-- верхняя часть - конец -->
 			<ul class="card__applies-block">
 				<li class="card__applies-row">Билет на целый день</li>
+				<li class="card__applies-row">Билет на целый день</li>
 				<li class="card__applies-row">6 остановок у главных достопримечательностей</li>
 				<li class="card__applies-row card__available-times-row">
-					<span class="applies-row__text">Билет на целый день</span>
+					<span class="applies-row__text">Ближайший рейс сегодня</span>
 					<ul class="card__available-times-block hidded-entityy">
 						<li class="card__available-time-item transition-entity">12:00</li>
 						<li class="card__available-time-item transition-entity">12:00</li>
@@ -118,5 +124,17 @@
 		<!-- Контент карточки - конец -->
 	</div>
 	<!-- Карточка - конец -->
+	<script>
+		// https://adapt.960.gs/
+		ADAPT_CONFIG = {
+			path: '/css/',
+			dynamic: true,
+			range: [
+				'1200px to 2540px = 1200.css',
+			],
+		};
+	</script>
+	<script src="js/adapt.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
