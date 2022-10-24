@@ -1,0 +1,37 @@
+/* ---------------- */
+/* solutions styles */
+/* ---------------- */
+.solution__title {
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 799px) {
+  table:nth-of-type(2) {
+    height: auto !important;
+    border: 0;
+  }
+  table:nth-of-type(2) tr {
+    display: flex;
+    height: auto !important;
+    flex-direction: column;
+    border-bottom: 1px dashed #000;
+  }
+  table:nth-of-type(2) tr:not(:first-child) {
+    margin-top: 10px;
+  }
+  table:nth-of-type(2) tr:first-child {
+    padding-top: 10px;
+    border-top: 1px dashed #000;
+  }
+  table:nth-of-type(2) td {
+    display: block;
+    height: auto !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    border: 0;
+    margin-bottom: 10px;
+  }
+  table:nth-of-type(2) p {
+    margin: 0;
+  }
+}/*# sourceMappingURL=solutions.css.map */
