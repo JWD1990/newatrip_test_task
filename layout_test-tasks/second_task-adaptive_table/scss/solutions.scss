@@ -1,0 +1,45 @@
+/* ---------------- */
+/* solutions styles */
+/* ---------------- */
+
+.solution__title {
+	font-weight: bolder;
+}
+
+// так как таблица не под mobile-first, да ещё и с inline-styles
+@media screen and (max-width: 799px) {
+	table:nth-of-type(2) {
+		height: auto !important;
+		border: 0;
+
+		tr {
+			display: flex;
+			height: auto !important;
+			flex-direction: column; // перебить inline-styles
+
+			&:not(:first-child) {
+				margin-top: 10px;
+			}
+
+			&:first-child {
+				padding-top: 10px;
+				border-top: 1px dashed #000;
+			}
+
+			border-bottom: 1px dashed #000;
+		}
+
+		td {
+			display: block;
+			height: auto !important; // перебить inline-styles
+			width: 100% !important; // перебить inline-styles
+			box-sizing: border-box;
+			border: 0;
+			margin-bottom: 10px;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+}
