@@ -122,7 +122,7 @@ button {
 .card__applies-row {
   padding-left: 35px;
   color: #4B4B4B;
-  background: url("/images/check-mark.svg") 0 2px no-repeat;
+  background: url("../images/check-mark.svg") 0 2px no-repeat;
 }
 .card__applies-row:not(:first-child) {
   margin-top: 9px;
