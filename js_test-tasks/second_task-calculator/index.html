@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newatrip Test Task</title>
+    <style>
+      .margin_top {
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+  <label for="route">Выберите направление</label><br>
+  <select name="route" id="route" size="3">
+      <option value="aToB">из A в B</option>
+      <option value="bToA">из B в A</option>
+      <option value="aToBtoA">из A в B и обратно в А</option>
+  </select>
+
+  <div id="time_block" style="display: none;" class="margin_top">
+    <label for="time">Выберите время</label><br>
+    <select name="time" id="time_select"></select>
+  </div>
+
+  <div id="back_time_block" style="display: none;" class="margin_top">
+    <label for="back_time">Выберите время обратного отплытия</label><br>
+    <select name="back_time" id="back_time_select"></select>
+  </div>
+
+  <div id="tickets_and_calculate" style="display: none;" class="margin_top">
+    <label for="num">Количество билетов</label><br>
+    <input type="text" id="num" placeholder="Введите количесто билетов" value="1">
+    <br><br>
+    <button id="make_info">Посчитать</button>
+  </div>
+
+  <div id="result_place" class="margin_top"></div>
+
+  <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment-timezone-with-data.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
